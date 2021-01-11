@@ -13,7 +13,7 @@ export const AddTransaction = () => {
         e.preventDefault();
         setResponse('');
 
-        if(amount === 0){
+        if(+amount === 0){
             setResponse("error");
             return false;
         }
